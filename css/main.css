@@ -13,6 +13,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-size: 1em;
+	flex-flow: row wrap;
 }
 
 .container{
@@ -21,6 +22,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -58,6 +60,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 header h1 {
@@ -97,6 +100,7 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -176,10 +180,36 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+
+/* Media Queries */
+
+@media all and (min-width: 768px) {
+	/*tablet styles*/
+
+.bottom-section,
+.section-one,
+.section-two,
+.section-three {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+}
+
+@media all and (min-width: 1200pd) {
+	/*desktop*/
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
 }
